@@ -250,7 +250,7 @@ nav{
     height:85%;
     width:85%;
     border-radius: 50%;
-    background:linear-gradient(#FE340A,#f0761fe7);
+    background:linear-gradient(to top right,#FE340A,#f0761fe7);
     filter: blur(20px);
     position: absolute;
     animation-name: underMove2;
@@ -265,16 +265,90 @@ nav{
         transform: translate(-10%,-10%) skew(0);
     }
     to{
-        transform: translate(20%,10%) skew(-12deg);
-    }
-    
+        transform: translate(20%,10%) skew(-20deg);
+    }    
 }
 @keyframes underMove2 {
     from{
         transform: translate(10%,10%) skew(0);
     }
     to{
-        transform: translate(-10%,10%) skew(-12deg);
-    }
-    
+        transform: translate(-10%,10%) skew(-20deg);
+    }   
 }
+#page3{
+    height:100vh;
+    width:100%;
+    background-color:#EFEAE3;
+    padding:4vw 0vw;
+
+}
+.elem{
+    min-height:150px;
+    width:100%;
+    background-color:#EFEAE3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom:1px solid black;
+    overflow: hidden;
+    padding: 0 2vw;
+}
+.elem h2{
+    font-size: 3.6vw;
+    z-index: 9;
+}
+.elem .overlay{
+    height:100%;
+    width:100%;
+    background-color:orange;
+    position: absolute;
+    left:0;
+    top:-100%;
+    transition: all ease 1s;
+}
+.elem:hover .overlay{
+    top:0;
+}
+#fixed-image{
+    height:30vw;
+    width:24vw;
+    z-index: 99;
+    position: fixed;
+    left:50%;
+    top:25%;
+    display: none;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+#page3-upper{
+    height:5vw;
+    width:100%;
+    background-color: #EFEAE3;
+    padding:0vw 2vw;
+    display: flex;
+    gap:1vw;
+}
+#page3-upper div{
+    height:1vw;
+    width:1vw;
+    background-color: #FE340A;
+    border-radius: 50%;
+}
+#page4{
+    min-height:150vh;
+    width:100%;
+    background-color:pink;
+    padding:4vw 0vw;
+}
+#page4-left{
+    height:100%;
+    width:100%;
+}
+#page4-left h3{
+    color: #887878;
+    z-index: 99;
+}
+
+
