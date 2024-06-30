@@ -12,6 +12,10 @@ html,body{
     height:100%;
     width:100%;
 }
+#main{
+    position: relative;
+    z-index: 10;
+}
 #page1{
    min-height:100vh;
     width:100%;
@@ -237,6 +241,7 @@ nav{
     height:85%;
     width:85%;
     border-radius: 50%;
+
     background:linear-gradient(#FE340A,#f0761fe7);
     filter: blur(15px);
     animation-name: underMove;
@@ -336,19 +341,110 @@ nav{
     background-color: #FE340A;
     border-radius: 50%;
 }
+
 #page4{
-    min-height:150vh;
+    height:160vh;
     width:100%;
-    background-color:pink;
-    padding:4vw 0vw;
+    background-color: #EFEAE3;
+
 }
-#page4-left{
-    height:100%;
+#page5{
+    height:100vh;
     width:100%;
 }
-#page4-left h3{
-    color: #887878;
-    z-index: 99;
+#footer{
+    height:100vh;
+    width:100%;
+    background-color:black;
+    position:sticky;
+    bottom:0;
 }
-
-
+#footer-div{
+    height:90%;
+    width:100%;
+    background:linear-gradient( #FD380B,black);
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   
+}
+#footer-div h1{
+    font-size: 23vw;
+    color:white;
+    bottom:0;
+    top:60vh;
+    z-index:9;
+}
+#footer-div p{
+    color:white;
+    font-size: 2.5vw;
+    padding:0vw 5.5vw;
+    height:3vw;
+    z-index:9;
+}
+#moving-footer{
+    height:50vw;
+    width:70vw;
+ position: absolute;
+ top:20vh;
+ left:20vw;
+}
+#move1{
+    height:68%;
+    width:95%;
+    border-radius: 50%;
+    background:linear-gradient(#ef4d29,black 90%);
+    filter: blur(15px); 
+    animation-name: Moving1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+}
+@keyframes Moving1 {
+    from{
+        transform: translate(0%,10%) skew(0);
+    }
+    to{
+        transform: translate(20%,10%) skew(-20deg);
+    }    
+}
+#move2{
+    height:68%;
+    width:85%;
+    border-top-left-radius:30%;
+    border-top-right-radius:30%;
+     background:linear-gradient(black);
+   filter: blur(35px); 
+   animation-name: Moving1;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+}
+@keyframes Moving1 {
+    from{
+        transform: translate(20%,0%) skew(0);
+    }
+    to{
+        transform: translate(-30%,-5%) scale(1.1,1.1) skew(0deg);
+    }    
+}
+#footer-bottom {
+    bottom: 0;
+    height:10vh;
+    width:100%;
+    background-color:black;
+    position: absolute;
+    display: flex;
+    font-size: 1.2vw;
+    justify-content: space-between;
+    padding:1vw 2vw;
+    align-items: center;
+    color: #fff;
+    border-top: 1px solid #dadada;
+    
+}
