@@ -2,6 +2,10 @@
     font-family: sundown;
     src: url(NeueHaasDisplayMediu.ttf);
 }
+@font-face {
+    font-family: sundownlight;
+    src: url(NeueHaasDisplayThin.ttf);
+}
 *{
     margin:0;
     padding:0;
@@ -282,7 +286,7 @@ nav{
     }   
 }
 #page3{
-    height:100vh;
+    min-height:100vh;
     width:100%;
     background-color:#EFEAE3;
     padding:4vw 0vw;
@@ -342,12 +346,54 @@ nav{
     border-radius: 50%;
 }
 
-#page4{
-    height:160vh;
-    width:100%;
-    background-color: #EFEAE3;
 
+#page4 {
+    height: 90vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 10vw 2vw;
 }
+#page4upper{
+    display:flex;
+    gap:1vw;
+    margin-left:33vw;
+    padding-bottom: 2vw;
+}
+#page4upper div{
+    height:1vw;
+    width:1vw;
+    background-color: #ef4d29;
+    border-radius: 50%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align:center;
+    font-size: 14px;
+    display: flex;
+    border-left: 2px solid #dadada;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    font-family: sundownlight;
+    gap:2vw;
+  }
+
+  .swiper-slide img {
+    width: 80%;
+    height: 40%;
+    object-fit:cover;
+    margin-left:1vw;
+    top:0;
+    align-items: center;
+  }
+
+  .swiper-slide {
+    width: 30%;
+  }
 #page5{
     height:100vh;
     width:100%;
